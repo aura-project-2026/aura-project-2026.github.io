@@ -1,0 +1,41 @@
+body { 
+    font-family: 'Space Mono', monospace; 
+    background-color: #050505; 
+    color: #d1d1d1; 
+    scroll-behavior: smooth; 
+}
+
+.aura-glow { 
+    text-shadow: 0 0 15px rgba(153, 27, 27, 0.6); 
+}
+
+.bg-card { 
+    background: #0a0a0a; 
+    border: 1px solid #1a1a1a; 
+}
+
+.btn-red { 
+    background-color: #991b1b; 
+    transition: 0.3s; 
+}
+
+.btn-red:hover { 
+    background-color: #7f1d1d; 
+    box-shadow: 0 0 20px rgba(153, 27, 27, 0.4); 
+}
+
+#cart-sidebar { 
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+/* Custom Styled Select Arrow */
+select { 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e"); 
+    background-position: right 0.5rem center; 
+    background-repeat: no-repeat; 
+    background-size: 1.5em 1.5em; 
+    padding-right: 2.5rem; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+}
