@@ -66,7 +66,7 @@
         [High-THCA Boutique Image Loading...]
     </span>
 
-    <img src="https://aura-project-2026.github.io/aaathca.jpg" 
+    <img src="./aaathca.jpg" 
          alt="Specimen" 
          class="absolute inset-0 w-full h-full object-contain z-10 transition duration-500 group-hover:scale-105"
          onerror="this.style.display='none'">
@@ -99,7 +99,7 @@
                     [Dehydrated Herbarium Image Loading...]
                 </span>
 
-                <img src="https://aura-project-2026.github.io/mushies.jpg" 
+                <img src="./mushies.jpg" 
                      alt="Specimen" 
                      class="absolute inset-0 w-full h-full object-contain z-10 transition duration-500 group-hover:scale-105"
                      onerror="this.style.display='none'">
@@ -160,8 +160,31 @@
         </div>
 
     </main>
-
-    <div id="pay-modal" class="fixed inset-0 z-[200] bg-black/95 hidden items-center justify-center p-6">
+    <div id="warning-modal" class="fixed inset-0 z-[210] bg-red-950/90 hidden items-center justify-center p-6 backdrop-blur-sm">
+        <div class="max-w-md w-full border-2 border-red-600 p-8 bg-black shadow-[0_0_50px_rgba(220,38,38,0.5)] text-center">
+            <div class="text-6xl mb-4">☣</div>
+            <h3 class="text-red-600 font-black uppercase tracking-tighter text-2xl mb-4 aura-glow">
+                LEVEL 4 SECURITY ALERT
+            </h3>
+            <p class="text-xs text-white font-mono leading-relaxed mb-6 uppercase">
+                Restricted Archive materials detected in logistics queue. 
+                <br><br>
+                <span class="text-red-500 font-bold">WARNING:</span> You are requesting high-potency alkaloid isolates. 
+                A.U.R.A. assumes no liability for misuse, incorrect dosage, or neurological impact. 
+                <br><br>
+                Do you possess the required research protocols?
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+                <button onclick="document.getElementById('warning-modal').style.display='none'" class="py-4 border border-zinc-700 text-zinc-500 text-[9px] font-bold uppercase tracking-widest hover:bg-zinc-900 transition">
+                    Abort
+                </button>
+                <button onclick="executeOrder()" class="py-4 bg-red-700 text-white text-[9px] font-bold uppercase tracking-widest hover:bg-red-600 hover:scale-105 transition shadow-lg shadow-red-900/50">
+                    CONFIRM & PROCEED
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="pay-modal" class="fixed inset-0 z-[200] bg-green-950/90 hidden items-center justify-center p-6 backdrop-blur-sm">
         <div class="max-w-lg w-full border border-red-900 p-8 bg-zinc-950 font-mono">
             <h3 class="text-red-700 font-bold uppercase tracking-[0.3em] text-sm mb-6">Logistics Protocol</h3>
             <div class="text-[11px] text-zinc-400 space-y-6 leading-relaxed">
@@ -185,6 +208,5 @@
 </body>
 
 </html>
-
 
 
