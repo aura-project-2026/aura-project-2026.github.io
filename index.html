@@ -60,9 +60,19 @@
     <main id="archive" class="max-w-6xl mx-auto pb-32 px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <div class="bg-card p-1 border-red-900/10 hover:border-red-900/50 transition flex flex-col">
-            <div class="bg-zinc-900 aspect-video flex items-center justify-center text-[10px] text-zinc-700 uppercase tracking-widest border-b border-zinc-800">
-                [High-THCA Boutique Specimen]
-            </div>
+            <div class="bg-black aspect-video relative flex items-center justify-center border-b border-zinc-800 overflow-hidden group">
+    
+    <span class="text-[10px] text-zinc-700 uppercase tracking-widest font-mono z-0 absolute">
+        [High-THCA Boutique Image Loading...]
+    </span>
+
+    <img src="./aaathca.jpg" 
+         alt="Specimen" 
+         class="absolute inset-0 w-full h-full object-contain z-10 transition duration-500 group-hover:scale-105"
+         onerror="this.style.display='none'">
+    </div>
+         
+        
             <div class="p-6 flex-grow">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-lg font-bold text-white uppercase italic">Batch: THCA-09</h3>
@@ -81,9 +91,18 @@
             </div>
         </div>
 
-        <div class="bg-card p-1 border-red-900/10 hover:border-red-900/50 transition flex flex-col">
-            <div class="bg-zinc-900 aspect-video flex items-center justify-center text-[10px] text-zinc-700 uppercase tracking-widest border-b border-zinc-800">
-                [Dehydrated Herbarium Specimen]
+    <div class="bg-card p-1 border-red-900/10 hover:border-red-900/50 transition flex flex-col">
+            
+            <div class="bg-black aspect-video relative flex items-center justify-center border-b border-zinc-800 overflow-hidden group">
+                
+                <span class="text-[10px] text-zinc-700 uppercase tracking-widest font-mono z-0 absolute">
+                    [Dehydrated Herbarium Image Loading...]
+                </span>
+
+                <img src="./mushies.jpg" 
+                     alt="Specimen" 
+                     class="absolute inset-0 w-full h-full object-contain z-10 transition duration-500 group-hover:scale-105"
+                     onerror="this.style.display='none'">
             </div>
             <div class="p-6 flex-grow">
                 <div class="flex justify-between items-start mb-4">
@@ -166,4 +185,5 @@
 </body>
 
 </html>
+
 
